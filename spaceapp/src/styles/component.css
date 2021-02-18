@@ -1,0 +1,75 @@
+.Nav{
+    width: 8vw;
+    height: 80%;
+    transition: 0.3s;
+    color: white;
+    font-size: 3vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vh;
+
+}
+.Nav:hover{
+    background-color: rgb(186, 106, 1);
+}
+
+
+.navBar{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    flex-direction: row-reverse; 
+    position: fixed;
+    z-index: 2;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.46);
+}
+
+.card{
+    width: 80%;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    margin: 0 10% 1% 10%;
+}
+.boxCardTitle{
+    width: 15%;
+    padding: 1%;
+    position: relative;
+    background-color: white;
+    border-bottom-left-radius: 1vh;
+    border-top-left-radius: 1vh;
+    font-size: 5vh;
+}
+.textCard{
+    width: 85%;
+    padding: 1%;
+    position: relative;
+    background-color: black;
+    font-size: 5vh;
+    transition: 0.3s;
+    border-bottom-right-radius: 1vh;
+    border-top-right-radius: 1vh;  
+}
+.linkt{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 2vw;
+}
+.textCard:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+
+.logo > img {
+    margin-left: 2vw;
+    width: 100%;
+    height: 100%;
+    width: 10vw;
+}
+.spa{
+    width: 70vw;
+}
