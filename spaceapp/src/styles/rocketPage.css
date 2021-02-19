@@ -24,6 +24,7 @@ body {
 
 
 .container > div {
+  background-color: #b5b8b6;
   font-size: 1.2vw;
   text-align: center;
   border-radius: 2vw;
