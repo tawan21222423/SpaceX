@@ -43,5 +43,13 @@
 .miss{
     padding-top: 10vh;
 }
+.headfilter{
+    position: absolute;
+    color: rgb(255, 174, 0);
+    font-size: 1vh;
+    left: 7%;
+    top:20%;
+    display: inline;
+}
 
 

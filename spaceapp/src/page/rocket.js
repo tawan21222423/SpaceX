@@ -5,13 +5,15 @@ import '../styles/rocketPage.css'
 
 const Rocket = () => {
     const [rockets, setRockets] = useState([])
-
-    useEffect(() =>{
-        fetchData('https://api.spacexdata.com/v3/rockets', (data) =>{
-            console.log(data)
-            setRockets(data)
-        })
-    }, [])
+    
+        useEffect(() =>{
+            const fetchrocket = async () => {
+                const response = await fetch('https://api.spacexdata.com/v3/rockets')
+                const data = await response.json()
+                setRockets(data)
+            }
+            fetchrocket()
+        }, [])
 
     return(
     <>   
