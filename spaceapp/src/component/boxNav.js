@@ -1,13 +1,13 @@
-// import React from 'react'
-// import "../styles/component.css"
-// import {NavLink} from 'react-router-dom'
+import React from 'react'
+import "../styles/component.css"
+import {NavLink} from 'react-router-dom'
 
-// const BoxNav = ({text, path}) => {
-//     return (
-//         <NavLink className="Nav" activeClassName="active" to={path} activeClassName="active">
-//             <p>{text}</p>
-//         </NavLink>
-//     )
-// }
+const BoxNav = ({text, path}) => {
+    return (
+        <NavLink className="Nav" to={path} activeClassName="active">
+            <p>{text}</p>
+        </NavLink>
+    )
+}
 
-// export default BoxNav
+export default BoxNav

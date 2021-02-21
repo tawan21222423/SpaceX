@@ -19,6 +19,9 @@ const RoutePath = () => {
                     <Route path="/rocket">
                         <Rocket />
                     </Route>
+                    {/* <Route path="/test">
+                        <test />
+                    </Route> */}
                 </Switch>
         </Router>
       )
