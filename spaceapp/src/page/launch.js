@@ -5,7 +5,7 @@ import '../styles/launchPage.css'
 import Checkbox from '@material-ui/core/Checkbox';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-
+// import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Launch = () => {
     const [Launchs, setLaunchs] = useState([])
@@ -41,7 +41,7 @@ const Launch = () => {
     }
 
     return(
-    <>   
+    <>        
         <div className="boxm">
             <div>
                 <h1 className="head">Launch</h1>
@@ -54,14 +54,19 @@ const Launch = () => {
                     <label><Dropdown options={optionsname} onChange={handleChangerocketname} placeholder="Select Rocket Name"/></label>
                     <label>success:<Checkbox checked={launchsuccess} onChange={handleChangesuccess}inputProps={{ 'aria-label': 'primary checkbox' }}/></label><br/>
                     
-            </label><br/>
+            </label><br/>           
                 {firsttime?Launchs.map((Launch) =>{
-                    return(Launch.launch_year == year && Launch.rocket.rocket_name == rocketname && Launch.launch_success == launchsuccess ?<LaunchCard Launch={Launch}/>:true)
-                    }):Launchs.map((Launch) =>{return(<LaunchCard h={Launch}/>)})}
+                    return(Launch.launch_year == year && Launch.rocket.rocket_name == rocketname && Launch.launch_success == launchsuccess  || Launch.rocket.rocket_name == rocketname && Launch.launch_success == launchsuccess || Launch.launch_year == year  && Launch.launch_success == launchsuccess ?<LaunchCard h={Launch}/>:true)
+                    }):
 
+                    Launchs.map((Launch) =>{return(<LaunchCard h={Launch}/>)})
+                    
+                    }
+                    
+            
             </div>
-
-        </div>
+            
+        </div>      
     </>
     )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import '../styles/launchPage.css'
 import { Link } from "react-router-dom";
-const LaunchCard = ({ h }) =>{
+const LaunchCard = ({ h} ) =>{
 
     return(
         <div >
-                <Link to={{pathname:"/LaunchDetail/"+h.flight_number, state:{id:h.flight_number}}}>
+                <Link to={{pathname:"/LaunchDetail/"+ h.flight_number, state:{id:h.flight_number}}}>
                         <div><a>
                                 <div className="content" style={{ backgroundImage: `url(${h.links.mission_patch_small})`}}>
                                         <h3>{h.mission_name}</h3>

@@ -5,6 +5,7 @@ const MissionCard = ({mission}) => {
     const {mission_name, wikipedia, mission_id} = mission
     const link = wikipedia
     return (
+        
         <div className="card">
 
             <div className="boxCardTitle">
@@ -17,6 +18,7 @@ const MissionCard = ({mission}) => {
                 </a>
             </div>
         </div>
+       
     )
 }
 
