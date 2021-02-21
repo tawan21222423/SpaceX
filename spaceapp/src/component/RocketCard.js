@@ -1,19 +1,26 @@
 import React from 'react'
 import '../styles/rocketPage.css'
-const RocketCard = ({ rocket }) =>{
-    const { flickr_images, rocket_name, description, wikipedia } = rocket
-    const link = wikipedia
+import { Link } from "react-router-dom";
+const RocketCard = ({ t }) =>{
 
     return(
             <div>
-                <a className="linkt"href={link}>
-                    <div className="content" style={{ backgroundImage: `url(${flickr_images})` }}>
-                            <h3>{rocket_name}</h3>
-                            <p>{description}</p>
-                    </div>
-                    </a>
+                    <Link to={{pathname:"/RocketDetail/"+t.rocket_id, state:{id:t.rocket_id}}}>
+                        
+                        <div className="content" style={{ backgroundImage: `url(${t.flickr_images})` }}>
+                                <h3>{t.rocket_name}</h3>
+                              
+                                <p>{t.description}</p>                             
+                                
+                        </div>
+                        
+                        
+                    </Link>
+                    
             </div>
+            
     )
+    
 }
 
 export default RocketCard

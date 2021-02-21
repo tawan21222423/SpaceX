@@ -4,6 +4,8 @@ import Launch from './launch'
 import Rocket from './rocket'
 import Home from './home'
 import '../styles/stylesPages.css'
+import RocketDetail from './RocketDetail'
+import LaunchDetail from './LaunchDetail'
 
 const RoutePath = () => {
     return (
@@ -18,6 +20,10 @@ const RoutePath = () => {
                     </Route>
                     <Route path="/rocket">
                         <Rocket />
+                    </Route>
+                        <Route  path="/RocketDetail" component={RocketDetail}>
+                    </Route>
+                        <Route  path="/LaunchDetail" component={LaunchDetail}>
                     </Route>
                 </Switch>
         </Router>

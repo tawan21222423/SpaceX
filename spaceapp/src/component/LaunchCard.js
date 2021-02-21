@@ -1,18 +1,17 @@
 import React from 'react'
 import '../styles/launchPage.css'
-const LaunchCard = ({ Launch }) =>{
-    const { rocket, launch_success, links ,launch_year, mission_name} = Launch
-    const link = links.wikipedia
-
+import { Link } from "react-router-dom";
+const LaunchCard = ({ h }) =>{
 
     return(
         <div >
-        
-                <div><a className="linkt"href={link}>
-                        <div className="content" style={{ backgroundImage: `url(${links.mission_patch_small})`}}>
-                                <h3>{mission_name}</h3>
-                        </div>
-                </a></div>
+                <Link to={{pathname:"/LaunchDetail/"+h.flight_number, state:{id:h.flight_number}}}>
+                        <div><a>
+                                <div className="content" style={{ backgroundImage: `url(${h.links.mission_patch_small})`}}>
+                                        <h3>{h.mission_name}</h3>
+                                </div>
+                        </a></div>
+                </Link>
         </div>
                 
        
