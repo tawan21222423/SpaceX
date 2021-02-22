@@ -9,17 +9,19 @@ body {
 }
 
 .container {
+  
+
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   grid-gap:100px 100px;
   max-width:150vw;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  margin-top: 45vh;
+  margin-top: 25vh;
   width: 50%;
-  padding: 0px;
-  margin-bottom: 5vh;
+  height: 20vw;
+  margin-left: 25%;
+
 }
 
 
@@ -49,22 +51,33 @@ body {
   align-items: center;
   justify-content: center;
   
+
+  
 }
 .content > h3{
   color: rgb(255, 183, 0);
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .content > p{
   opacity: 0;
   transition: 1s;
   color: rgb(255, 255, 255);
+  font-size: 0.7vw;
+  padding: 5px;
 }
 .content > p:hover{
   opacity: 1;
   color: rgb(53, 134, 255);
   text-shadow: 1px 1px #ffffff;
 }
-
+.boxc{
+  height: 20vw;
+ 
+}
+.boxm{
+  height: 20vw;
+  
+}
 
 
 

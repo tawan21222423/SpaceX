@@ -8,10 +8,11 @@
     justify-content: center;
     flex-direction: column;
     padding-bottom: 1vh;
-    padding-top: 10vh;
+
 }
 
 #detail{
+    margin-top: -20vw;
     margin-left: 10vw;
     width: 50%;
     color: white;
@@ -19,7 +20,7 @@
     transition: 0.5s;
     border-radius: 1vh;
     padding: 3vh;
-    font-size: 5vh;
+    font-size: 2vw;
 }
 #detail:hover{
     background-color: rgba(40, 40, 40, 0.9);
@@ -27,21 +28,21 @@
 
 
 .head2{
-    position: absolute;
+
     color: rgb(255, 174, 0);
-    font-size: 10vh;
-    left:7%;
-    top:90%;
+    font-size: 5vw;
+    margin-left: 5vh;
 }
 .head{
-    position: absolute;
+    margin-top: 5vw;
     color: rgb(255, 174, 0);
-    font-size: 10vh;
-    left: 7%;
-    top:10%;
+    font-size: 5vw;
+    margin-left: 5vh;
 }
 .miss{
-    padding-top: 10vh;
+    
+
+    padding-top: 1vh;
 }
 .headfilter{
     position: absolute;
@@ -51,5 +52,8 @@
     top:20%;
     display: inline;
 }
+.boxc{
+    height: 50%;
+  }
 
 

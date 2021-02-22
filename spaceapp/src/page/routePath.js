@@ -4,8 +4,8 @@ import Launch from './launch'
 import Rocket from './rocket'
 import Home from './home'
 import '../styles/stylesPages.css'
-import RocketDetail from './rocketDetail'
-import LaunchDetail from './launchDetail'
+import RocketDetail from './RocketDetail'
+import LaunchDetail from './LaunchDetail'
 
 const RoutePath = () => {
     return (

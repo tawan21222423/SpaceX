@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const RocketCard = ({ t }) =>{
 
     return(
-            <div>
+            <div className="boxc">
                     <Link to={{pathname:"/RocketDetail/"+t.rocket_id, state:{id:t.rocket_id}}}>
                         
                         <div className="content" style={{ backgroundImage: `url(${t.flickr_images})` }}>
